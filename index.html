@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girish Kumar Raghav - Full Stack Developer</title>
+    <meta name="description" content="Full Stack Developer Portfolio" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="portfolio-container" class="portfolio-container dark-theme">
+        <!-- Particle Canvas -->
+        <canvas id="particles"></canvas>
+        
+        <!-- Theme Toggle -->
+        <div class="theme-toggle">
+            <button id="theme-button" class="theme-button">
+                <svg id="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="m12 2 0 2"></path>
+                    <path d="m12 20 0 2"></path>
+                    <path d="m4.93 4.93 1.41 1.41"></path>
+                    <path d="m17.66 17.66 1.41 1.41"></path>
+                    <path d="m2 12 2 0"></path>
+                    <path d="m20 12 2 0"></path>
+                    <path d="m6.34 17.66-1.41 1.41"></path>
+                    <path d="m19.07 4.93-1.41 1.41"></path>
+                </svg>
+                <svg id="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">Raghav.Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#journey" class="nav-link">Journey</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="greeting">Hello, I'm</span>
+                    <span class="name">Girish Kumar Raghav</span>
+                    <span id="hero-title" class="role"></span>
+                </h1>
+                <p class="hero-subtitle">
+                    Crafting digital experiences with cutting-edge technology and innovative design
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="element element-1"></div>
+                    <div class="element element-2"></div>
+                    <div class="element element-3"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section animate-on-scroll">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-description">
+                            I’m an aspiring Full Stack Developer with hands-on experience in building responsive web apps using HTML, CSS, JavaScript. I’ve worked
+                            on real-world projects during internships, gaining skills in frontend development, Git, and version control. I’ve also built personal projects
+                            like a Library and Restaurant Management System, showcasing both UI/UX and backend integration using Java and MySQL. I’m a fast
+                            learner with a passion for clean code, efficient design, and collaborative development.
+                        </p>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">Fresher</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Client Satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">⚛️</div>
+                            <h3>HTML, CSS & JavaScript</h3>
+                            <p>Building a responsive Library Management System for managing books using HTML, CSS, and JavaScript.</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🎨</div>
+                            <h3>UI/UX Design</h3>
+                            <p>Creating beautiful and intuitive user interfaces</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">📱</div>
+                            <h3>Responsive Design</h3>
+                            <p>Ensuring perfect experiences across all devices</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">⚡</div>
+                            <h3>Performance</h3>
+                            <p>Optimizing applications for speed and efficiency</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section animate-on-scroll">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://girishkumarraghav.github.io/Library-Management-System/" class="project-link">Live Demo</a>
+                                    <a href="https://github.com/GirishKumarRaghav/Library-Management-System" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Library Management System</h3>
+                            <p> Library Management System for managing books using HTML, CSS, and JavaScript.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Live Demo</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Hospital Management System (HMS)</h3>
+                            <p>OOP-based Hospital Management System in Java to manage patients, doctors, and appointments</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java (Core) </span>
+                                <span class="tech-tag">OOPs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Live Demo</a>
+                                    <a href="https://github.com/GirishKumarRaghav/Restaurant-Management-System" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Restaurant Management System</h3>
+                            <p>Built a full-stack Restaurant Management System with Spring Boot, MySQL, and a responsive frontend for seamless order and admin management</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Spring Boot</span>
+                                <span class="tech-tag">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section animate-on-scroll">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's build something amazing together</h3>
+                        <p>I'm always open to discussing new opportunities and interesting projects.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-icon">📧</span>
+                                <span>graghav1142bsr@email.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📱</span>
+                                <span>+91 (895) 402-3571</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <span>Bulandshahr (UP) India</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/GirishKumarRaghav" class="social-link">
+                                <span class="social-icon">🐙</span>
+                                GitHub
+                            </a>
+                            <a href="http://www.linkedin.com/in/girish-raghav-892878241" class="social-link">
+                                <span class="social-icon">💼</span>
+                                LinkedIn
+                            </a>
+                            <a href="https://x.com/GirishRaghav10" class="social-link">
+                                <span class="social-icon">🐦</span>
+                                Twitter
+                            </a>
+                            <a href="mailto:graghav1142bsr@email.com" class="social-link">
+                                <span class="social-icon">✉️</span>
+                                Email
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form class="form" id="contact-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" class="form-input" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" class="form-input" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Subject" class="form-input" required />
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Your Message" class="form-textarea" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 Girish Raghav. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
